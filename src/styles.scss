@@ -2,7 +2,7 @@
 
 
 /* Importing Bootstrap SCSS file. */
-
+@import './themes/bootstrap/bootstrap';
 @import '~bootstrap/scss/bootstrap';
 @import './themes/material/material';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');

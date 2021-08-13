@@ -5,7 +5,7 @@
         @if (themeExists($key, $theme)) {
             $value: getThemeValue($key, $theme);
             //:global(.#{$theme}) & {
-            @debug "#{$property}: #{$inlineExtra} #{$value} #{$postExtra} !important";
+            // @debug "#{$property}: #{$inlineExtra} #{$value} #{$postExtra} !important";
             @at-root .#{$theme} #{&} {
                 #{$property}: #{$inlineExtra} #{$value} #{$postExtra} !important; //fallback for browsers that shouldn't exist anymore
                 #{$property}: #{$inlineExtra} var(--theme-#{$theme}-#{$key}, #{$value}) #{$postExtra} !important;

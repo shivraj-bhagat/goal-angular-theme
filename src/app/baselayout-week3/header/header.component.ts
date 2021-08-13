@@ -1,4 +1,5 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
     selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-    isDark = true;
+    isDark = false;
     constructor(private render: Renderer2) {
         if(this.isDark === true) {
             this.render.setAttribute(document.documentElement, 'class', 'dark');
